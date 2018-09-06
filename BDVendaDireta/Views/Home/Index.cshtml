@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div class="jumbotron">
+    <h1>BDVendaDireta</h1>
+    <p class="lead">Trabalho final da matéria Desenvolvimento Web com Ferramentas Microsoft - Professor Henrique Dezani</p>
+    <p><a href="https://pastebin.com/AKBzmNWT" class="btn btn-primary btn-lg">Regras do Trabalho &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Tecnologias Utilizadas</h2>
+        <p>
+            ASP.NET MVC5, SQLServer, EntityFramework
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Novo Usuário</h2>
+        <div class="btn btn-default ">
+            @Html.ActionLink("Cadastrar", "Create", "Usuarios")
+        </div>
+    </div>
+    <div class="col-md-4">
+        <h2>Login</h2>
+        <div class="btn btn-default ">
+            @Html.ActionLink("Entrar", "Login", "Usuarios")
+        </div>
+    </div>
+</div>
